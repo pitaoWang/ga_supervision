@@ -1,0 +1,24 @@
+.submit-btn {
+    font-size: 14px;
+    margin: 0px 30px;
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    line-height: 30px;
+    border: 1px solid #ececec;
+    border-radius: 3px;
+    color: black;
+    background: -webkit-linear-gradient(#a3a3a3, #e7e7e7);
+    background: linear-gradient(#a3a3a3, #e7e7e7);
+}
+.flybase-submit-div a:hover {
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    line-height: 30px;
+    border: 1px solid #ececec;
+    border-radius: 3px;
+    color: black;
+    background: -webkit-linear-gradient(#e7e7e7, #a3a3a3);
+    background: linear-gradient(#e7e7e7, #a3a3a3);
+}

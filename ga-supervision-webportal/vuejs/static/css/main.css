@@ -1,0 +1,371 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+a, a:active, a:hover {
+    color: #333;
+    outline: 0
+}
+
+progress, sub, sup {
+    vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, img, main, menu, nav, section, summary {
+    display: block
+}
+
+button, hr, input {
+    overflow: visible
+}
+
+.menu-box, sub, sup {
+    position: relative
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+audio, canvas, progress, video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden], template {
+    display: none
+}
+
+a {
+    -webkit-text-decoration-skip: objects;
+    background: 0 0;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b, strong {
+    font-weight: bolder
+}
+
+dfn {
+    font-style: italic
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+img {
+    border-style: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0
+}
+
+button, input, select, textarea {
+    font: inherit;
+    margin: 0
+}
+
+optgroup {
+    font-weight: 700
+}
+
+button, select {
+    text-transform: none
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+    outline: ButtonText dotted 1px
+}
+
+fieldset {
+    border: 1px solid silver
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    white-space: normal
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox], [type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: .54
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+body, html {
+    width: 100%;
+    height: 100%
+}
+
+body {
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    /*min-width: 1900px;*/
+    /*background-color: #060b0e;*/
+}
+
+article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, input, legend, li, menu, nav, ol, p, pre, section, td, textarea, th, ul {
+    margin: 0;
+    padding: 0
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    outline: 0
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400
+}
+
+ol, ul {
+    list-style: none
+}
+
+input::-ms-clear, input::-ms-reveal {
+    display: none
+}
+
+::-moz-selection {
+    background: #2db7f5;
+    color: #fff
+}
+
+::selection {
+    background: #2db7f5;
+    color: #fff
+}
+
+a[disabled] {
+    color: #ccc;
+    cursor: not-allowed;
+    pointer-events: none
+}
+
+.hide {
+    display: none
+}
+
+.clearfix, .mod .tit, .wrap {
+    zoom: 1
+}
+
+.clearfix:after, .clearfix:before, .mod .tit:after, .mod .tit:before, .wrap:after, .wrap:before {
+    content: " ";
+    display: table
+}
+
+.clearfix:after, .mod .tit:after, .wrap:after {
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    height: 0
+}
+
+.word-nowrap {
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.header {
+    width: 99%;
+    height: 50px;
+    margin: auto;
+    background: url("../images/head_bg.png") no-repeat;
+}
+.header .operation-logo {
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+    margin-top: 10px;
+    background: url(../images/logo.png) no-repeat
+}
+
+/*
+@font-face {
+    font-family: 'SourceHanSansCN-Regular';
+    src: url('../images/SourceHanSansCN-Regular.ttf');
+}
+*/
+
+.header .title {
+    float: left;
+    margin-left: 20px;
+    font-family: 'SourceHanSansCN-Regular';
+    font-size: 16px;
+    font-weight: bold;
+    color: #007ECF;
+    line-height: 50px;
+}
+
+.footers {
+    width: 99%;
+    /*float: left;*/
+    height: 100%;
+    /*line-height: 60px;*/
+    color: #8A909F;
+    font-size: 12px;
+    text-align: center;
+// bottom: 0px;
+}
+
+.footers a {
+    color: #33A6FC
+}
+.wrap {
+
+    width: 100%;
+    height:95%;
+    margin: auto;
+}
+.left-nav {
+    border-right: 1px solid #EFEFEF;
+    float: left;
+    width: 12%;
+    height: 99%;
+    background: url(../images/sidebar_bg.png) no-repeat ;
+}
+
+/*一级菜单字体大小*/
+.layout-text {
+    font-size: 16px;
+}
+/*一级菜单图标容器*/
+.menu-icon-div {
+    float: left;
+    width: 30px;
+    height: 20px;
+}
+
+.fr {
+    float: right !important
+}
+.main {
+    position: relative;
+    margin-left: 200px;
+    min-height: 960px;
+}
+.main .row {
+    float: left;
+    width: 49%;
+    background-color: #ffffff;
+}
+.mod .cut td:first-child {
+    padding-left: 0
+}
+
+.mod .cut td:last-child {
+    border-right: 0 none
+}
+
+.mod .cut.container-center td{  padding-top: 10px; padding-bottom: 10px; font-size: 14px;}
+.mod .cut.container-center tr:nth-child(2n-1) td{ background-color: #313233;}
+.mod .cut.container-center tr td:nth-child(2n){ background-color: #3d3d3d;}
+
+.main_div {
+    float: left;
+    background-color: #fff;
+
+    width:100%;
+    height: 94%;
+    padding: 0px 20px 0px 20px;
+}
+
+.container_div {
+    float: left;
+    padding: 30px 30px 30px 30px;
+    width: 100%;
+   /* height: 100%;*/
+    border: 1px solid #EFEFEF;
+}
+
+.container_divs {
+    float: left;
+    padding: 30px 30px 30px 30px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #EFEFEF;
+}

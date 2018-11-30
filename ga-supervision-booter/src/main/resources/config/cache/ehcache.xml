@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache updateCheck="false" name="ehcache">
+
+	<diskStore path="java.io.tmpdir/ga-company/ehcache" />
+	<cacheManagerEventListenerFactory
+		class="com.atosenet.ga.company.core.cache.listener.AppCacheManagerEventListenerFactory"
+		properties="" />
+
+	<!-- DefaultCache setting. -->
+	<defaultCache maxEntriesLocalHeap="1000" eternal="false"
+		timeToIdleSeconds="0" timeToLiveSeconds="0" overflowToDisk="true"
+		maxEntriesLocalDisk="100000" />
+
+	<cache name="USER_AUTH_CACHE" maxElementsInMemory="5000" eternal="false"
+		overflowToDisk="true" timeToLiveSeconds="0" timeToIdleSeconds="1200">
+		<cacheEventListenerFactory class="com.atosenet.ga.company.core.cache.listener.AppCacheEventListenerFactory" />
+	</cache>
+
+	<cache name="TOKEN_SEED_CACHE" maxElementsInMemory="5000"
+		eternal="false" overflowToDisk="true" timeToLiveSeconds="0"
+		timeToIdleSeconds="1200">
+		<cacheEventListenerFactory class="com.atosenet.ga.company.core.cache.listener.AppCacheEventListenerFactory" />
+	</cache>
+</ehcache>

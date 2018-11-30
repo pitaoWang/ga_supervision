@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "app.index.view",
+    "type": "java.lang.String",
+    "description": "首页导向'"
+  },
+  {
+    "name": "app.db.showsql",
+    "type": "java.lang.String",
+    "description": "显示SQL语句"
+  },
+  {
+    "name": "app.db.genddl",
+    "type": "java.lang.String",
+    "description": "刷新表结构"
+  }
+]}

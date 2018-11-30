@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.atosenet.ga</groupId>
+	<artifactId>ga-supervision-parent</artifactId>
+	<version>1.0.1</version>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.6.RELEASE</version>
+	</parent>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<esapi-version>2.1.0</esapi-version>
+        <shiro-version>1.4.0</shiro-version>
+        <commons-lang3-version>3.1</commons-lang3-version>
+        <fastjson-version>1.2.17</fastjson-version>
+        <poi.version>3.11</poi.version>
+	</properties>
+
+	<modules>
+		
+		<module>ga-supervision-mgt</module>
+		<module>ga-supervision-booter</module>
+		<module>ga-supervision-monitor</module>
+		<module>ga-supervision-core</module>
+		<module>ga-supervision-doc</module>
+		<module>ga-supervision-database</module>
+	</modules>
+</project>

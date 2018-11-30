@@ -1,0 +1,55 @@
+/** self form wizard css **/
+
+.vue-form-wizard {
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+
+.vue-form-wizard .wizard-header {
+    display: none;
+}
+
+.vue-form-wizard .stepTitle{
+    color:#919191;
+    font-size: 14px;
+}
+
+.vue-form-wizard .wizard-nav-pills {
+    margin-top: 0;
+    border-bottom: 1px solid #919191;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.vue-form-wizard .wizard-card-footer .wizard-footer-left {
+    float: left;
+    position: absolute;
+    top: 360px;
+    z-index: 100;
+    width: 10px;
+    height:60px;
+}
+
+.vue-form-wizard .wizard-card-footer .wizard-footer-right {
+    float: right;
+    position: absolute;
+    top: 360px;
+    left:87%;
+    z-index: 100;
+    width: 10px;
+    height:60px;
+}
+
+.vue-form-wizard.md .wizard-navigation .wizard-progress-with-circle {
+    position: relative;
+    top: 40px;
+    height: 4px;
+    background-color: #919191;
+}

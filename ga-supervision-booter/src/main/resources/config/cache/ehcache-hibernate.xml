@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache updateCheck="false" name="ehcacheHibernate" monitoring="autodetect" dynamicConfig="true">
+
+	<diskStore path="java.io.tmpdir/ga-company/ehcache-hibernate" />
+	<transactionManagerLookup
+		class="net.sf.ehcache.transaction.manager.DefaultTransactionManagerLookup"
+		properties="jndiName=java:/TransactionManager" propertySeparator=";" />
+	<cacheManagerEventListenerFactory
+		class="com.atosenet.ga.company.core.cache.listener.AppCacheManagerEventListenerFactory"
+		properties="" />
+
+	<!-- DefaultCache setting. -->
+	<defaultCache maxEntriesLocalHeap="0" eternal="false"
+		timeToIdleSeconds="1200" timeToLiveSeconds="1200">
+		<!--<terracotta/> -->
+	</defaultCache>
+
+	<cache name="entityCache"
+        maxEntriesLocalHeap="1000"
+        maxEntriesLocalDisk="10000" 
+        eternal="false" 
+        diskSpoolBufferSizeMB="20"
+        timeToIdleSeconds="60" 
+        timeToLiveSeconds="120"
+        memoryStoreEvictionPolicy="LFU" 
+        transactionalMode="off">
+        <persistence strategy="localTempSwap" />
+        <cacheEventListenerFactory class="com.atosenet.ga.company.core.cache.listener.AppCacheEventListenerFactory" />
+	</cache>
+
+	<cache name="collectionCache" 
+        maxEntriesLocalHeap="1000"
+        maxEntriesLocalDisk="10000" 
+        eternal="false" 
+        diskSpoolBufferSizeMB="20"
+        timeToIdleSeconds="60" 
+        timeToLiveSeconds="120"
+		memoryStoreEvictionPolicy="LFU" 
+		transactionalMode="off">
+		<persistence strategy="localTempSwap" />
+		<cacheEventListenerFactory class="com.atosenet.ga.company.core.cache.listener.AppCacheEventListenerFactory" />
+	</cache>
+
+	<cache name="org.hibernate.cache.internal.StandardQueryCache"
+		maxEntriesLocalHeap="5" 
+		eternal="false" 
+		timeToLiveSeconds="120">
+		<persistence strategy="localTempSwap" />
+		<cacheEventListenerFactory class="com.atosenet.ga.company.core.cache.listener.AppCacheEventListenerFactory" />
+	</cache>
+
+	<cache name="org.hibernate.cache.spi.UpdateTimestampsCache"
+		maxEntriesLocalHeap="5000" eternal="true">
+		<persistence strategy="localTempSwap" />
+		<cacheEventListenerFactory class="com.atosenet.ga.company.core.cache.listener.AppCacheEventListenerFactory" />
+	</cache>
+</ehcache>
